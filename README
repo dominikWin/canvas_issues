@@ -1,0 +1,23 @@
+canvas_issues - Take assignments from a Canvas and make them Github issues.
+
+Runs as a AWS lambda function and a single json file in S3 for state to keep costs low.
+
+Simply setup the function with CloudWatch Events with schedule expression "rate(15 minutes)".
+
+The Lambda function role needs this policy:
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "VisualEditor0",
+            "Effect": "Allow",
+            "Action": [
+                "s3:PutObject",
+                "s3:GetObject"
+            ],
+            "Resource": "arn:aws:s3:::some-bucket.db/*"
+        }
+    ]
+}
+

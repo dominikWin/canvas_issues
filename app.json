@@ -1,0 +1,12 @@
+{
+    "CANVAS_API_KEY": "",
+    "CANVAS_API_URL": "https://osu.instructure.com",
+    "COURSE_CODE_FILTER": "SP2020",
+    "GITHUB_REPO": "username/repo",
+    "GITHUB_TOKEN": "",
+    "data": {
+        "assignments": {}
+        },
+        "logs": []
+    }
+}
